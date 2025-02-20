@@ -1,7 +1,6 @@
 package day04p1
 
 import (
-	"fmt"
 	"io"
 	"strings"
 
@@ -111,10 +110,10 @@ func Solve(r io.Reader) any {
 		}
 	}
 
-	fmt.Println("Puzzle:")
-	for _, line := range puzzle {
-		fmt.Printf("%c\n", line)
-	}
+	// fmt.Println("Puzzle:")
+	// for _, line := range puzzle {
+	// 	fmt.Printf("%c\n", line)
+	// }
 
 	var found int
 	for row := range puzzle {
@@ -153,10 +152,10 @@ func Solve(r io.Reader) any {
 		}
 	}
 
-	fmt.Println("\nSolution:")
-	for _, line := range solution {
-		fmt.Printf("%c\n", line)
-	}
+	// fmt.Println("\nSolution:")
+	// for _, line := range solution {
+	// 	fmt.Printf("%c\n", line)
+	// }
 
 	return found
 }

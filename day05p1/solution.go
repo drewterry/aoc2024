@@ -1,7 +1,6 @@
 package day05p1
 
 import (
-	"fmt"
 	"io"
 	"strconv"
 	"strings"
@@ -81,9 +80,6 @@ func Solve(r io.Reader) any {
 		if correct {
 			middle := (len(print) - 1) / 2
 			result += print[middle]
-
-			fmt.Println(print)
-			fmt.Println(print[middle])
 		}
 	}
 
