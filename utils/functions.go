@@ -6,6 +6,7 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"strings"
 )
 
 // Greatest Common Denominator
@@ -48,7 +49,7 @@ func ReadLines(r io.Reader) []string {
 	scanner := bufio.NewScanner(r)
 	for scanner.Scan() {
 		line := scanner.Text()
-		result = append(result, line)
+		result = append(result, strings.TrimSpace(line))
 	}
 	err := scanner.Err()
 	Check(err, "error reading lines")
